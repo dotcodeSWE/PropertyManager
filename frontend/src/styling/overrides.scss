@@ -3,14 +3,26 @@
 .navbar-toggler {
   border: none;
 
+  svg {
+    color: var(--bs-secondary);
+  }
+
   &:focus {
     box-shadow: none;
   }
+
+  &.collapsed {
+    svg {
+      color: var(--bs-primary);
+    }
+  }
 }
+
 .card {
   &:hover {
     cursor: pointer;
   }
+
   .container {
     padding-right: 0;
     padding-left: 0;
@@ -34,7 +46,7 @@
       input {
         border: none;
       }
-      
+
       .camera-container {
         .btn {
           align-items: center;
