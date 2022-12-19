@@ -38,8 +38,6 @@ builder.Services.AddHangfire(config =>
         DisableGlobalLocks = true
     });
 
-    //builder.Services.InitServicesDotCodeDiagnostic(builder.Environment.ApplicationName, builder.Configuration);
-
     builder.InitConsoleLogging();
 
     builder.Services.AddHangfireServer();
@@ -47,7 +45,6 @@ builder.Services.AddHangfire(config =>
     builder.Services.AddSingleton<CustomerBackgroundTasks>();
 
     var app = builder.Build();
-    //app.InitAppDotCodeDiagnostic();
 
     app.UseHangfireDashboard("/Customer/hangfire");
     app.MapHangfireDashboard("/Customer/hangfire");

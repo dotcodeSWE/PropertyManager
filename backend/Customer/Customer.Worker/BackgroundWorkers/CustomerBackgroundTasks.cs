@@ -33,7 +33,6 @@ namespace Customer.Worker.BackgroundWorkers
             catch (Exception ex)
             {
                 logger.LogError($"Error testTemp: {ex.Message}", ex.ToString());
-                //CustomMetrics.WorkerExeptionCounter("CustomerBackgroundTasks");
             }
         }
     }

@@ -28,8 +28,8 @@ namespace Customer.Migrations.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("AreaId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("AreaId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -43,8 +43,8 @@ namespace Customer.Migrations.Migrations
                     b.Property<long>("RowVersion")
                         .HasColumnType("bigint");
 
-                    b.Property<Guid>("TeamId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("TeamId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

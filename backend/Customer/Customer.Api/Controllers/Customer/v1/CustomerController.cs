@@ -7,7 +7,7 @@ using Customer.Api.Dto.Response.Customer.v1;
 using Customer.Core.Features.Commands.Customer.Create;
 using Customer.Core.Features.Queries.Customer;
 using Customer.Core.Features.Commands.Customer.Update;
-using Customer.Core.Features.Commands;
+using Customer.Core.Features.Commands.Customer.Delete;
 
 namespace Customer.Api.Controllers.Customer.v1;
 

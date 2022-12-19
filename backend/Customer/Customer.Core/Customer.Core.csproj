@@ -26,7 +26,6 @@
   <ItemGroup>
     <Folder Include="Domain\Enums\" />
     <Folder Include="Domain\External\" />
-    <Folder Include="Features\Commands\Customer\Delete\" />
   </ItemGroup>
 
 </Project>

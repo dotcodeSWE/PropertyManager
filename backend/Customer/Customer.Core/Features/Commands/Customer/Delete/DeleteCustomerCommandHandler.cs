@@ -3,7 +3,7 @@ using Customer.Core.Repository.Interfaces;
 using DotCode.CqrsUtils.BaseClasses;
 using MapsterMapper;
 
-namespace Customer.Core.Features.Commands
+namespace Customer.Core.Features.Commands.Customer.Delete
 {
     public class DeleteCustomerCommandHandler : BaseCommandHandler<DeleteCustomerCommand, bool>
     {
@@ -22,7 +22,7 @@ namespace Customer.Core.Features.Commands
             if (entity != null)
             {
                 await _repo.DeleteAsync(entity);
-                
+
                 return true;
             }
             return false;
