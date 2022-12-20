@@ -20,9 +20,8 @@ dist-ssr
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
 *.sw?
 
-.vs/*
+.vs*
 [Bb]in/
 [Oo]bj/
