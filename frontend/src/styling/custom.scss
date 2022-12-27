@@ -18,6 +18,12 @@
   background-position: 20% 40%;
 }
 
+.uploaded-image {
+  width: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 80px);
+}
+
 html, body, #root {
   overflow: hidden;
 }
