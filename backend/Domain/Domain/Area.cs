@@ -1,6 +1,6 @@
-namespace Domain.Repository.Entities;
+namespace Domain.Domain;
 
-public class Area : BaseEntity
+public class Area
 {
     public Guid Id { get; set; }
     public string Name { get; set; }
